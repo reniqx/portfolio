@@ -1,9 +1,19 @@
 
 
-<?php
-	include "includes/head.php";
-?>
 
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8">
+	<!--meta http-equiv="refresh" content="30"-->
+	<script type="text/javascript" src="jscript/main.js"></script>
+	<script type="text/javascript" src="jscript/slideshow.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/test.css">
+	<link rel="stylesheet" type="text/css" href="styles/mtest.css">
+	<title>Home</title>
+</head>
 
 
 
@@ -20,22 +30,81 @@
 </span>
 
 
-<?php
-	include "includes/nav.php";
-?>
+	<nav>
+		<ul>
+			<li><a href="?page=home"><img class = "navIco" src = "https://freepikpsd.com/media/2019/10/home-icon-png-transparent-6-Transparent-Images.png"></a></li>
+			<li class="subNav">
+            </a></li>
+
+			<li><a href="?page=about"><img class = "navIco" src = "https://icon-library.com/images/about-icon/about-icon-22.jpg">
+            </a></li>
+
+            <li class="subNav"><a href="#" ><img class = "navIco" src = "https://cdn.iconscout.com/icon/premium/png-512-thumb/online-portfolio-12-1133670.png"></a>
+				<ul class="subNav_content">
+					<li><a href="?page=graphics"><img class = "navIco" src = "    https://freepikpsd.com/media/2019/10/design-icon-png-Transparent-Images.png">
+                    </a></li>
+					
+                    <li><a href="?page=photography"><img class = "navIco" src = "https://icon-library.com/images/photography-icon-png/photography-icon-png-8.jpg"></a></li>
+					
+                    <li><a href="?page=md"><img class = "navIco" src = "http://simpleicon.com/wp-content/uploads/movie-3.png"></a></li>
+					
+                    <!--li><a href="?page=videography"><img class = "navIco" src = "https://cdn0.iconfinder.com/data/icons/rafif-glyph-vol-2/512/record-512.png"></a></li-->
+					<li><a href="?page=home"><img class = "navIco" src = "https://i0.wp.com/webdevpuneet.com/wp-content/uploads/2020/05/responsive-design.png?resize=512%2C512&ssl=1"></a></li>
+                    <li><a href="?page=games"><img class = "navIco" src = "https://opengameart.org/sites/default/files/psController.png"></a></li>
+			</li>
+			</ul>
+			<li><a href="?page=contacts"><img class = "navIco" src = "https://howto-android.com/wp-content/uploads/2017/09/ajouterphotocontact6.png"></a></li>
+        </ul>
+	</nav>
+
 </div>
 
 <div class="col col_2" id="col_2">
 
-<?php
-if(isset($_GET['page'])){
-	// page content is loaded
-	$page = $_GET['page'] . ".php";
-	include $page;
-}else {
-	include 'welcome.php';
-}?>
-  </div>
+
+
+<article>
+<span id="intro">
+<h1></h1>
+<div class="propic"> </div>
+<h2>To be better than I was yesterday</h2> 
+
+<p>You're looking for a junior developer that is not only a coder but an architect. One who can, not only create, but can analyze. Someone who thinks outside the proverbial box to find creative solutions to problems large and small. As a designer, I’ve worked with individual clients and major brands to create compelling, efficient, and accessible experiences. I thrive on independent work but also know how to collaborate with a team to develop scopes and manage project milestones.</p>
+
+<br>
+<q>
+    Possibility is only limited by imagination.
+
+</q>
+<p>
+~Joseph Cunningham
+</p>
+
+</span>
+
+</article>
+<article>
+<span id="introVid">
+ <iframe id="hpgVid"  src="https://www.youtube.com/embed/3_3KHDvUR78?rel=0&autoplay=0&modestbranding=1&enablejsapi" frameborder="0" allowfullscreen><script type="text/javascript"> </script>
+</iframe>
+
+
+</span>
+</article>
+<div class="image_wrap" id="image_wrap">
+
+
+
+
+
+<img class="slideImage homeImg" id="watchyaLogo" src="https://s-media-cache-ak0.pinimg.com/originals/f9/36/46/f93646ff07d6adb84100b3482a06726d.jpg" alt="Watch-Ya Tv Logo"  usemap="#slideMap">
+
+<img class="slideImage homeImg" src="https://s-media-cache-ak0.pinimg.com/originals/61/d2/ba/61d2bac9ce133511970713f7a31325a9.jpg" alt="Watch-Ya Tv Business Card" usemap="#slideMap">
+<img class="slideImage homeImg" src="https://s-media-cache-ak0.pinimg.com/originals/43/01/4f/43014f2442206067cc3afb24c14e323b.jpg" alt="IVS Logo" usemap="#slideMap">
+<img class="slideImage homeImg" src="images/photos/ctb2.jpg" alt="Party Photo" usemap="#slideMap">
+<img class="slideImage homeImg" src="https://s-media-cache-ak0.pinimg.com/originals/e2/24/38/e224386e54f121c4759c82c6b49d9c4b.jpg" alt="August Rush Concept Flyer" usemap="#slideMap">
+
+</div>  </div>
 </div>
 
 
@@ -47,6 +116,81 @@ if(isset($_GET['page'])){
 
 </div>
 <div>
-	<?php include "includes/footer.php";?>
+	
+
+<footer class ="clearfix">
+
+	<p> 
+                            <script type="text/javascript" src="jscript/matrix.js"></script>
+					Luck Is When Preparation Meets Opportunity &copy2016&ndash;2021 </p>
+
+<script type="text/javascript">listen('image_wrap')</script>
+
+<div id="slideShow" class="slider fade ">
+
+<img  id="slideCon" src="" onclick="nextSlide()">
+
+
+<button class="clearFix slideBtn slideBtnP " type="button" onclick="prevSlide()"></button>
+<button class="clearFix slideBtn slideBtnC" type="button" onclick="slideShow()">X</button>
+<button class="clearFix slideBtn slideBtnN" type="button" onclick="nextSlide()"></button>
+
+
+
 </div>
+        
+
+<script>
+  
+	const maxWidth = 768;
+
+	const screenW = window.outerWidth;
+	const screenH = window.outerHeight;
+
+
+
+    const myDiv = document.querySelector('#col_2');
+    const body = document.querySelector('body');
+    
+    if(screenW >= maxWidth){
+
+	    body.style.overflow = "hidden";
+	    myDiv.style.overflow = "scroll";
+	    myDiv.onmouseover = scrollBy({
+	        top: 0,
+	        left: 100,
+	        behavior: 'smooth'
+	    });
+    }
+
+</script>
+
+
+
+
+
+<script>
+(function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.getElementById('col_2').scrollLeft -= (delta * 40); // Multiplied by 40
+       // e.preventDefault();
+    }
+    if (document.getElementById('col_2').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('col_2').addEventListener('mousewheel', scrollHorizontally, true);
+        // Firefox
+        document.getElementById('col_2').addEventListener('DOMMouseScroll', scrollHorizontally, true);
+    } else {
+        // IE 6/7/8
+        document.getElementById('col_2').attachEvent('onmousewheel', scrollHorizontally);
+    }
+})();
+
+</script>
+
+
+</footer>
+	</div>
 	</body></html>"
